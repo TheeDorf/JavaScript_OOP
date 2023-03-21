@@ -32,7 +32,7 @@ class Coder extends Person {
         super(name,pets,residence,hobbies);
         
         this.occupation = occupation;
-        occupation= "Full Stack Web Developer";
+       
 
     }
     greeting(){
@@ -59,11 +59,11 @@ aj.greeting();
 // ex 4
 
 class Calculator{
-    cosntructor(){
+    constructor(){
         this.result= 0;
     }
     add(a,b = this.result){
-        this.result = a +b;
+        this.result = a + b;
         return this.result;
     }
     subtract(a,b = this.result){
@@ -75,7 +75,7 @@ class Calculator{
         return this.result;
     }
     divide(a,b = this.result){
-        this.result = a / b;
+        this.result = b / a;
         return this.result;
     }
     displayResults(){
@@ -86,6 +86,17 @@ class Calculator{
 const calculator = new Calculator();
 
 calculator.add (7,3);
-
-
 console.log(calculator);
+calculator.subtract(10,5)
+console.log(calculator);
+calculator.multiply(5,2);
+console.log(calculator);
+calculator.divide(25,5);
+console.log(calculator);
+
+calculator.add(100,20);
+calculator.divide(10);
+console.log(calculator);
+
+
+calculator.displayResults();
